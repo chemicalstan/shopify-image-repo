@@ -5,7 +5,7 @@ module.exports = {
  * @param {object} res
  * @returns {object} reflection object
  */
-    uploadImage : (req, res)=>{
+    uploadImage : async (req, res)=>{
         const user = req.user;
         const { image_url, description, tag } = req.body;
         // Get image field from this user
